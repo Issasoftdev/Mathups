@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-ups</title>
+    <link rel="stylesheet" href="./CSS/Stylesheet.css">
+</head>
+
+<body class="gameContainer">
+
+    <div class="gameWrapper">
+
+        <div class="messageArea hidden" id="messageWrapper">
+            <h1 id="playerMessage"></h1>
+        </div>
+
+        <div class="scoreBox hidden" id="scoreWrapper">
+            <h1 class="scoreHeader">Score:</h3>
+            <h1 id="score"></h3>
+        </div>
+        
+        <section class="infoTab">
+            <header>
+                <h1 class="mainHeader">Math<span>ups</span>!</h1>
+            </header>
+            <div class="instructions">
+                <h3 class="subHeader">Instructions:</h3>
+                <ol>
+                    <li>Type the answer to the question in the space below.</li>
+                    <li>Click the button to submit your answer!</li>
+                    <li>Answer correctly and you score 10 points, get as many points as you can!</li>
+                    <li id="startInstruction">Click 'Start' to begin!</li>
+                </ol>
+            </div>
+        </section>
+    
+        <section class="playBox">
+
+            <div class="problemBox hidden" id="questionWrapper">
+                <h5 id="questionText"></h5>
+            </div>
+
+            <div class="answerBox hidden" id="answerWrapper">
+                <input placeholder="Type answer here." type="text" id="userAnswer" class="answerInput">
+    
+                <button id="submitButton">Submit!</button>
+            </div>
+
+            <button id="startButton">Start!</button>
+
+            <button class="hidden" id="restartButton">Retry</button>
+
+        </section>
+
+    </div>
+
+    <script src="./JS/main.js"></script>
+
+</body>
+</html>
