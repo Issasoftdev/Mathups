@@ -108,12 +108,14 @@ span {
 }
 
 .scoreBox {
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 8pt;
     color: white;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    padding: 20px;
+    border-style: solid;
 }
 
 .scoreHeader {
